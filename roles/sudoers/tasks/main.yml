@@ -1,0 +1,7 @@
+#We use a template here because thats the only way to run a validate command
+- name: Allow sudo group passwordless sudo
+  template:
+    src: sudo.j2
+    dest: /etc/sudoers.d/sudo
+    validate: "visudo -cf %s"
+    mode: 0440

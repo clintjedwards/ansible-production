@@ -1,0 +1,7 @@
+*.retry
+.vscode/*
+__pycache__/
+*.py[cod]
+*$py.class
+ansible.cfg
+.env

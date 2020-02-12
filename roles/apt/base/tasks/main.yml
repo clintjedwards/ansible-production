@@ -1,0 +1,5 @@
+---
+- name: Install essential packages
+  apt:
+    name: ["apt-transport-https", "ca-certificates"]
+    state: present

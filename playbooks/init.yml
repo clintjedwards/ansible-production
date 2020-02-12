@@ -1,0 +1,8 @@
+- hosts: all
+  vars:
+    user_list:
+      - simsimma
+  roles:
+    - roles/apt/base
+    - roles/users
+    - roles/sudoers

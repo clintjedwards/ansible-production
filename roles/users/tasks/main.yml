@@ -1,0 +1,27 @@
+#Regular users
+- name: Create user
+  user:
+    name: "{{ item }}"
+    shell: /bin/bash
+    createhome: yes
+    groups:
+      [
+        "adm",
+        "dialout",
+        "cdrom",
+        "sudo",
+        "audio",
+        "video",
+        "plugdev",
+        "games",
+        "users",
+        "input",
+        "netdev",
+        "gpio",
+        "i2c",
+        "spi",
+      ]
+    home: "/home/{{ item }}"
+    append: yes
+  with_items: "{{ user_list }}"
+  when: user_list is defined
