@@ -1,0 +1,13 @@
+.:53 {
+    file /etc/coredns/zones/db.clintjedwards.home clintjedwards.home
+    file /etc/coredns/zones/db.10.0      0.10.in-addr.arpa
+
+    prometheus :8001
+    debug
+    log
+    errors
+    forward . tls://8.8.8.8 tls://8.8.4.4 {
+        tls_servername dns.google
+    }
+    cache
+}

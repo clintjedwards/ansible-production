@@ -1,8 +1,9 @@
 - hosts: all
   vars:
     user_list:
-      - simsimma
+      - clintjedwards
   roles:
+    - roles/hostname
     - roles/apt/base
     - roles/users
     - roles/sudoers

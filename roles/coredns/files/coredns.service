@@ -1,0 +1,13 @@
+[Unit]
+Description=coredns
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User=coredns
+Restart=on-failure
+ExecStart=/usr/bin/coredns -conf /etc/coredns/Corefile
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target

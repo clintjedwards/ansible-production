@@ -1,5 +1,12 @@
 ---
-- name: Install essential packages
+- name: Apt | Install essential packages
   apt:
-    name: ["apt-transport-https", "ca-certificates"]
+    name:
+      [
+        "apt-transport-https",
+        "ca-certificates",
+        "curl",
+        "software-properties-common",
+        "unzip",
+      ]
     state: present

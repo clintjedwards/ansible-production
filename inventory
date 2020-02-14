@@ -1,5 +1,8 @@
 [rpi-cluster]
-10.0.1.104 # rpi01
-10.0.1.105 # rpi02
-10.0.1.106 # rpi03
-10.0.1.107 # rpi04
+rpi01.clintjedwards.home
+rpi02.clintjedwards.home
+rpi03.clintjedwards.home
+rpi04.clintjedwards.home
+
+[dns]
+rpi01.clintjedwards.home

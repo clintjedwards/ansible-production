@@ -1,0 +1,5 @@
+- hosts: dns
+  vars:
+    coredns_version: 1.6.7
+  roles:
+    - roles/coredns
