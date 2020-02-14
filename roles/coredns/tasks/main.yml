@@ -27,26 +27,11 @@
     creates: /usr/bin/coredns
     mode: 0755
 
-- name: CoreDNS | Copy config files
-  copy:
-    src: Corefile
-    dest: /etc/coredns/Corefile
-    owner: coredns
-    group: coredns
-
-- name: CoreDNS | Copy zone files
-  copy:
-    src: "{{ item }}"
-    dest: /etc/coredns/zones
-    owner: coredns
-    group: coredns
-  with_fileglob:
-    - "zones/db.*"
-
 - name: CoreDNS | Set systemd file
   copy:
     src: coredns.service
     dest: /etc/systemd/system/coredns.service
+  notify: CoreDNS | Restart service
 
 - name: CoreDNS | Reload systemd for new service file
   systemd:
@@ -62,3 +47,19 @@
     path: /usr/bin/coredns
     capability: cap_net_bind_service+ep
     state: present
+
+- name: CoreDNS | Copy config files
+  copy:
+    src: Corefile
+    dest: /etc/coredns/Corefile
+    owner: coredns
+    group: coredns
+  notify: CoreDNS | Restart service
+
+- name: CoreDNS | Copy zone files
+  copy:
+    src: zones/
+    dest: /etc/coredns/zones
+    owner: coredns
+    group: coredns
+  notify: CoreDNS | Restart service

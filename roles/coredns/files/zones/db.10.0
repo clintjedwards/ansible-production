@@ -13,7 +13,13 @@ $TTL    604800
 
 ; PTR records
 
+; nameserver
 104.1      IN  PTR ns1.clintjedwards.home.
+
+; nas
+13.1       IN  PTR nas.clintjedwards.home.
+
+; rpi
 104.1      IN  PTR rpi01.clintjedwards.home.
 105.1      IN  PTR rpi02.clintjedwards.home.
 106.1      IN  PTR rpi03.clintjedwards.home.
