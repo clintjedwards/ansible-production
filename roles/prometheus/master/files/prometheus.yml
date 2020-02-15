@@ -2,11 +2,21 @@ scrape_configs:
   - job_name: "defaults"
     static_configs:
       - targets: [
-            "10.0.1.75:9090", #winterfell prometheus metrics
-            "10.0.1.75:9100", #winterfell node exporter metrics
-            "10.0.1.78:8001", #raspberry pi temp metrics
-            "nas.clintjedwards.home:9100", # nas node exporter metrics
-            "basecoat.clintjedwards.com:4444", # basecoat service metrics
+            # node exporter
+            "rpi01.clintjedwards.home:9100",
+            "rpi02.clintjedwards.home:9100",
+            "rpi03.clintjedwards.home:9100",
+            "rpi04.clintjedwards.home:9100",
+            "rpitemp.clintjedwards.home:9100",
+            "nas.clintjedwards.home:9100",
+            # prom metrics
+            "rpi01.clintjedwards.home:9090",
+            # apartment temp metrics
+            "rpitemp.clintjedwards.home:8001",
+            # basecoat service metrics
+            "basecoat.clintjedwards.com:4444",
+            # coredns metrics
+            ns1.clintjedwards.home:8001,
           ]
   - job_name: "blackbox"
     metrics_path: "/probe"

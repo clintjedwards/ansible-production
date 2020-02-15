@@ -1,5 +1,5 @@
 #Regular users
-- name: Create user
+- name: Users | Create user
   user:
     name: "{{ item }}"
     shell: /bin/bash

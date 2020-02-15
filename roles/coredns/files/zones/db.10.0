@@ -20,7 +20,10 @@ $TTL    604800
 13.1       IN  PTR nas.clintjedwards.home.
 
 ; prometheus
-104.1       IN PTR prometheus.clintjedwards.home.
+104.1      IN PTR prometheus.clintjedwards.home.
+
+; grafana
+104.1      IN  PTR grafana.clintjedwards.home.
 
 ; rpi
 104.1      IN  PTR rpi01.clintjedwards.home.

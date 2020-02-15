@@ -1,0 +1,38 @@
+- name: Prometheus Blackbox Exporter | Download, unzip, and install binary
+  unarchive:
+    src: https://github.com/prometheus/blackbox_exporter/releases/download/v0.16.0/blackbox_exporter-0.16.0.linux-armv7.tar.gz
+    dest: /tmp
+    remote_src: yes
+    validate_certs: yes
+    creates: /usr/bin/prometheus-blackbox-exporter
+    mode: 0755
+    extra_opts: [--strip-components=1]
+
+- name: Prometheus Blackbox Exporter | Copy binary to correct place
+  command: cp /tmp/blackbox_exporter /usr/bin/prometheus-blackbox-exporter
+  args:
+    creates: /usr/bin/prometheus-blackbox-exporter
+
+- name: Prometheus Blackbox Exporter | Set binary permissions
+  file:
+    path: /usr/bin/prometheus-blackbox-exporter
+    mode: 0755
+
+- name: Prometheus Blackbox Exporter | Set systemd file
+  copy:
+    src: prometheus-blackbox-exporter.service
+    dest: /etc/systemd/system/prometheus-blackbox-exporter.service
+
+- name: Prometheus Blackbox Exporter | Reload systemd for new service file
+  systemd:
+    daemon_reload: yes
+
+- name: Prometheus Blackbox Exporter | Enable service in systemd
+  systemd:
+    name: prometheus-blackbox-exporter
+    enabled: yes
+
+- name: Prometheus Blackbox Exporter | Set configuration file
+  copy:
+    src: blackbox-config.yml
+    dest: /etc/prometheus/blackbox-config.yml

@@ -19,6 +19,9 @@ ns1.clintjedwards.home.        IN    A    10.0.1.104
 ; prometheus
 prometheus.clintjedwards.home. IN    A    10.0.1.104
 
+; grafana
+grafana.clintjedwards.home.    IN    A    10.0.1.104
+
 ; rpi-cluster
 rpi01.clintjedwards.home.      IN    A    10.0.1.104
 rpi02.clintjedwards.home.      IN    A    10.0.1.105

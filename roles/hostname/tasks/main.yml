@@ -1,11 +1,4 @@
 ---
-- name: Set hostname
+- name: Init | Set hostname
   hostname:
     name: "{{ inventory_hostname }}"
-
-- name: Add correct IP address to hosts file
-  lineinfile:
-    dest: /etc/hosts
-    insertafter: '^127\.0\.0\.1\slocalhost'
-    line: "127.0.0.1 {{ inventory_hostname }}"
-    state: present

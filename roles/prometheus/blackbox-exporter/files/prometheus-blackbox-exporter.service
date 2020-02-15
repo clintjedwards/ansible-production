@@ -1,0 +1,12 @@
+[Unit]
+Description=prometheus blackbox exporter
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Restart=on-failure
+ExecStart=/usr/bin/prometheus-blackbox-exporter --config.file=/etc/prometheus/blackbox-config.yml
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target

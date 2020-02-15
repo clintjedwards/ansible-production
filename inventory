@@ -5,6 +5,9 @@ rpi03.clintjedwards.home
 rpi04.clintjedwards.home
 rpitemp.clintjedwards.home
 
+[blackbox]
+rpi02.clintjedwards.home
+
 [dns]
 rpi01.clintjedwards.home
 
