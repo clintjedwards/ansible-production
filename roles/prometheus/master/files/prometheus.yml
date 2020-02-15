@@ -1,0 +1,25 @@
+scrape_configs:
+  - job_name: "defaults"
+    static_configs:
+      - targets: [
+            "10.0.1.75:9090", #winterfell prometheus metrics
+            "10.0.1.75:9100", #winterfell node exporter metrics
+            "10.0.1.78:8001", #raspberry pi temp metrics
+            "nas.clintjedwards.home:9100", # nas node exporter metrics
+            "basecoat.clintjedwards.com:4444", # basecoat service metrics
+          ]
+  - job_name: "blackbox"
+    metrics_path: "/probe"
+    params:
+      module: ["http_2xx_ssl"]
+    static_configs:
+      #List of targets to poll
+      - targets:
+          - https://basecoat.clintjedwards.com
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: localhost:9115 # The blackbox exporter's real hostname:port.

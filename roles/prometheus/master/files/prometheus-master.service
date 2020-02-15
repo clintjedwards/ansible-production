@@ -1,0 +1,12 @@
+[Unit]
+Description=prometheus master
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Restart=on-failure
+ExecStart=/usr/bin/prometheus --config.file=/etc/prometheus/prometheus.yml --storage.tsdb.path=/etc/prometheus/data --storage.tsdb.retention=90d --web.external-url https://$(hostname):19090
+ExecReload=/bin/kill -HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target

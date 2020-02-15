@@ -1,0 +1,62 @@
+- name: Prometheus | Create user
+  user:
+    name: "prometheus"
+    createhome: no
+    append: yes
+
+- name: Prometheus | Create /etc/prometheus/rules folder
+  file:
+    path: /etc/prometheus/rules
+    state: directory
+    owner: prometheus
+    group: prometheus
+    recurse: yes
+
+- name: Prometheus | Create /etc/prometheus/data folder
+  file:
+    path: /etc/prometheus/data
+    state: directory
+    owner: prometheus
+    group: prometheus
+    recurse: yes
+
+- name: Prometheus | Download, unzip, and install binary
+  unarchive:
+    src: https://github.com/prometheus/prometheus/releases/download/v{{prometheus_version}}/prometheus-{{prometheus_version}}.linux-armv7.tar.gz
+    dest: /tmp
+    remote_src: yes
+    validate_certs: yes
+    creates: /usr/bin/prometheus
+    mode: 0755
+    extra_opts: [--strip-components=1]
+
+- name: Prometheus | Copy binary to correct place
+  command: cp /tmp/prometheus /usr/bin/prometheus
+  args:
+    creates: /usr/bin/prometheus
+
+- name: Prometheus | Set binary permissions
+  file:
+    path: /usr/bin/prometheus
+    mode: 0755
+
+- name: Prometheus | Set prometheus-master systemd file
+  copy:
+    src: prometheus-master.service
+    dest: /etc/systemd/system/prometheus-master.service
+
+- name: Prometheus | Reload systemd for new prometheus service file
+  systemd:
+    daemon_reload: yes
+
+- name: Prometheus | Enable prometheus-master service in systemd
+  systemd:
+    name: prometheus-master
+    enabled: yes
+
+- name: Prometheus | Copy config file
+  copy:
+    src: prometheus.yml
+    dest: /etc/prometheus/
+    owner: prometheus
+    group: prometheus

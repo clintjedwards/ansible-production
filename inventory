@@ -3,9 +3,13 @@ rpi01.clintjedwards.home
 rpi02.clintjedwards.home
 rpi03.clintjedwards.home
 rpi04.clintjedwards.home
+rpitemp.clintjedwards.home
 
 [dns]
 rpi01.clintjedwards.home
 
 [nas]
 nas.clintjedwards.home
+
+[prometheus]
+prometheus.clintjedwards.home

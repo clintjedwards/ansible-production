@@ -1,0 +1,5 @@
+- hosts: prometheus
+  vars:
+    prometheus_version: 2.16.0
+  roles:
+    - roles/prometheus/master
