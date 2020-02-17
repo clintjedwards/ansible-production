@@ -1,12 +1,12 @@
 [Unit]
-Description=consul minion
+Description=nomad minion
 Requires=network-online.target
 After=network-online.target
 
 [Service]
-User=consul
+User=nomad
 Restart=on-failure
-ExecStart=/usr/bin/consul agent -config-dir=/etc/consul/consul.d
+ExecStart=/usr/bin/nomad agent -config /etc/nomad
 ExecReload=/bin/kill -HUP $MAINPID
 
 [Install]
