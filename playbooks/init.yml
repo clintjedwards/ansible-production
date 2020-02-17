@@ -7,3 +7,4 @@
     - roles/apt/base
     - roles/users
     - roles/sudoers
+    - roles/prometheus/prometheus-node-exporter

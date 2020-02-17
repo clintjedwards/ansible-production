@@ -1,0 +1,12 @@
+{
+  "bootstrap_expect": 1,
+  "server": true,
+  "datacenter": "home",
+  "data_dir": "/etc/consul/data",
+  "ui": true,
+  "log_level": "INFO",
+  "enable_syslog": true,
+  "addresses": {
+    "http": "0.0.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+---
+- hosts: nomad-minion
+  vars:
+    consul_version: 1.7.0
+  roles:
+    - roles/users
+    - roles/consul/consul-minion

@@ -16,3 +16,11 @@ nas.clintjedwards.home
 
 [prometheus]
 prometheus.clintjedwards.home
+
+[nomad-master]
+rpi04.clintjedwards.home
+
+[nomad-minion]
+rpi01.clintjedwards.home
+rpi02.clintjedwards.home
+rpi03.clintjedwards.home

@@ -25,6 +25,12 @@ $TTL    604800
 ; grafana
 104.1      IN  PTR grafana.clintjedwards.home.
 
+; consul
+107.1      IN  PTR consul.clintjedwards.home.
+
+; nomad-master
+107.1      IN  PTR nomad-master.clintjedwards.home.
+
 ; rpi
 104.1      IN  PTR rpi01.clintjedwards.home.
 105.1      IN  PTR rpi02.clintjedwards.home.
