@@ -22,11 +22,8 @@ prometheus.clintjedwards.home.   IN    A    10.0.1.104
 ; grafana
 grafana.clintjedwards.home.      IN    A    10.0.1.104
 
-; consul
-consul.clintjedwards.home.       IN    A    10.0.1.107
-
-; nomad-master
-nomad-master.clintjedwards.home. IN    A    10.0.1.107
+; kubernetes
+kubernetes.clintjedwards.home.   IN    A    10.0.1.107
 
 ; rpi-cluster
 rpi01.clintjedwards.home.        IN    A    10.0.1.104

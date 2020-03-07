@@ -17,10 +17,10 @@ nas.clintjedwards.home
 [prometheus]
 prometheus.clintjedwards.home
 
-[nomad-master]
+[kubernetes-master]
 rpi04.clintjedwards.home
 
-[nomad-minion]
+[kubernetes-minion]
 rpi01.clintjedwards.home
 rpi02.clintjedwards.home
 rpi03.clintjedwards.home

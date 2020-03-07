@@ -1,9 +1,0 @@
----
-- hosts: nomad-master
-  vars:
-    nomad_version: 0.10.3
-    consul_version: 1.7.0
-  roles:
-    - roles/users
-    - roles/nomad/nomad-master
-    - roles/consul/consul-master
