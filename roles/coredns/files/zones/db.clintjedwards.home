@@ -11,19 +11,22 @@ $TTL    604800
 @    IN    NS    ns1
 
 ; nas
-nas.clintjedwards.home.          IN    A    10.0.1.13
+nas.clintjedwards.home.            IN    A    10.0.1.13
 
 ; name
-ns1.clintjedwards.home.          IN    A    10.0.1.104
+ns1.clintjedwards.home.            IN    A    10.0.1.104
 
 ; prometheus
-prometheus.clintjedwards.home.   IN    A    10.0.1.104
+prometheus.clintjedwards.home.     IN    A    10.0.1.104
 
 ; grafana
-grafana.clintjedwards.home.      IN    A    10.0.1.104
+grafana.clintjedwards.home.        IN    A    10.0.1.104
 
 ; kubernetes
-kubernetes.clintjedwards.home.   IN    A    10.0.1.107
+kubernetes.clintjedwards.home.     IN    A    10.0.1.107
+
+; experimental app
+experimental.clintjedwards.home.   IN    A    10.0.1.105
 
 ; rpi-cluster
 rpi01.clintjedwards.home.        IN    A    10.0.1.104

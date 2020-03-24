@@ -28,6 +28,9 @@ $TTL    604800
 ; kubernetes-master
 107.1      IN  PTR kubernetes-master.clintjedwards.home.
 
+; experimental app
+105.1      IN  PTR experimental.clintjedwards.home.
+
 ; rpi
 104.1      IN  PTR rpi01.clintjedwards.home.
 105.1      IN  PTR rpi02.clintjedwards.home.
