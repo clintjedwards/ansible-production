@@ -24,3 +24,6 @@ rpi04.clintjedwards.home
 rpi01.clintjedwards.home
 rpi02.clintjedwards.home
 rpi03.clintjedwards.home
+
+[redis]
+redis.clintjedwards.home

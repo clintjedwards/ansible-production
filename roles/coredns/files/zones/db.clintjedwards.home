@@ -28,6 +28,9 @@ kubernetes.clintjedwards.home.     IN    A    10.0.1.107
 ; experimental app
 experimental.clintjedwards.home.   IN    A    10.0.1.105
 
+; redis
+redis.clintjedwards.home.          IN    A    10.0.1.105
+
 ; rpi-cluster
 rpi01.clintjedwards.home.        IN    A    10.0.1.104
 rpi02.clintjedwards.home.        IN    A    10.0.1.105

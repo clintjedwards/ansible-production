@@ -31,6 +31,9 @@ $TTL    604800
 ; experimental app
 105.1      IN  PTR experimental.clintjedwards.home.
 
+; redis
+105.1      IN  PTR redis.clintjedwards.home.
+
 ; rpi
 104.1      IN  PTR rpi01.clintjedwards.home.
 105.1      IN  PTR rpi02.clintjedwards.home.

@@ -1,0 +1,25 @@
+---
+- name: Redis | Install server package
+  apt:
+    name: "redis-server"
+    state: present
+
+- name: Redis | Create /etc/redis/data folder
+  file:
+    path: /etc/redis/data
+    state: directory
+    owner: redis
+    group: redis
+    recurse: yes
+
+- name: Redis | Copy config files
+  copy:
+    src: redis.conf
+    dest: /etc/redis/redis.conf
+    owner: redis
+    group: redis
+
+- name: Redis | Enable service in systemd
+  systemd:
+    name: redis
+    enabled: yes
