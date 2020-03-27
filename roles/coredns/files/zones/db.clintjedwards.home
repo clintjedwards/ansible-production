@@ -17,10 +17,10 @@ nas.clintjedwards.home.            IN    A    10.0.1.13
 ns1.clintjedwards.home.            IN    A    10.0.1.104
 
 ; prometheus
-prometheus.clintjedwards.home.     IN    A    10.0.1.104
+prometheus.clintjedwards.home.     IN    A    10.0.1.13
 
 ; grafana
-grafana.clintjedwards.home.        IN    A    10.0.1.104
+grafana.clintjedwards.home.        IN    A    10.0.1.13
 
 ; kubernetes
 kubernetes.clintjedwards.home.     IN    A    10.0.1.107
@@ -33,6 +33,9 @@ go.clintjedwards.home.             IN    A    10.0.1.105
 
 ; redis
 redis.clintjedwards.home.          IN    A    10.0.1.105
+
+; traefik
+traefik.clintjedwards.home.        IN    A    10.0.1.13
 
 ; rpi-cluster
 rpi01.clintjedwards.home.        IN    A    10.0.1.104

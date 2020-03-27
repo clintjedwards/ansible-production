@@ -1,0 +1,30 @@
+[entryPoints]
+  [entryPoints.web]
+    address = ":80"
+
+[providers]
+  [providers.file]
+    watch = true
+    filename = "/etc/traefik/traefik.toml"
+
+[api]
+  insecure = true
+  dashboard = true
+
+[http.routers]
+  [http.routers.prometheus]
+    rule = "Host(`prometheus.clintjedwards.home`)"
+    service = "prometheus"
+
+  [http.routers.grafana]
+    rule = "Host(`grafana.clintjedwards.home`)"
+    service = "grafana"
+
+[http.services]
+  [http.services.prometheus.loadBalancer]
+    [[http.services.prometheus.loadBalancer.servers]]
+      url = "http://10.0.1.104:9090"
+
+  [http.services.grafana.loadBalancer]
+    [[http.services.grafana.loadBalancer.servers]]
+      url = "http://10.0.1.104:3000"

@@ -20,10 +20,10 @@ $TTL    604800
 13.1       IN  PTR nas.clintjedwards.home.
 
 ; prometheus
-104.1      IN PTR prometheus.clintjedwards.home.
+13.1      IN PTR prometheus.clintjedwards.home.
 
 ; grafana
-104.1      IN  PTR grafana.clintjedwards.home.
+13.1      IN  PTR grafana.clintjedwards.home.
 
 ; kubernetes-master
 107.1      IN  PTR kubernetes-master.clintjedwards.home.
@@ -36,6 +36,9 @@ $TTL    604800
 
 ; redis
 105.1      IN  PTR redis.clintjedwards.home.
+
+; traefik
+13.1      IN  PTR traefik.clintjedwards.home.
 
 ; rpi
 104.1      IN  PTR rpi01.clintjedwards.home.

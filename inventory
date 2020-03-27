@@ -27,3 +27,6 @@ rpi03.clintjedwards.home
 
 [redis]
 redis.clintjedwards.home
+
+[traefik]
+traefik.clintjedwards.home
