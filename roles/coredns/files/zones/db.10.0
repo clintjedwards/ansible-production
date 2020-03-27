@@ -31,6 +31,9 @@ $TTL    604800
 ; experimental app
 105.1      IN  PTR experimental.clintjedwards.home.
 
+; goto app
+105.1      IN  PTR go.clintjedwards.home.
+
 ; redis
 105.1      IN  PTR redis.clintjedwards.home.
 
