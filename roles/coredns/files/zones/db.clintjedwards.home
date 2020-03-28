@@ -37,6 +37,12 @@ redis.clintjedwards.home.          IN    A    10.0.1.105
 ; traefik
 traefik.clintjedwards.home.        IN    A    10.0.1.13
 
+; deluge
+deluge.clintjedwards.home.         IN    A    10.0.1.13
+
+; plex
+plex.clintjedwards.home.           IN    A    10.0.1.13
+
 ; rpi-cluster
 rpi01.clintjedwards.home.        IN    A    10.0.1.104
 rpi02.clintjedwards.home.        IN    A    10.0.1.105

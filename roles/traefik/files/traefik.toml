@@ -20,6 +20,14 @@
     rule = "Host(`grafana.clintjedwards.home`)"
     service = "grafana"
 
+  [http.routers.deluge]
+    rule = "Host(`deluge.clintjedwards.home`)"
+    service = "deluge"
+
+  [http.routers.plex]
+    rule = "Host(`plex.clintjedwards.home`)"
+    service = "plex"
+
 [http.services]
   [http.services.prometheus.loadBalancer]
     [[http.services.prometheus.loadBalancer.servers]]
@@ -28,3 +36,11 @@
   [http.services.grafana.loadBalancer]
     [[http.services.grafana.loadBalancer.servers]]
       url = "http://10.0.1.104:3000"
+
+  [http.services.deluge.loadBalancer]
+    [[http.services.deluge.loadBalancer.servers]]
+      url = "http://10.0.1.13:9091"
+
+  [http.services.plex.loadBalancer]
+    [[http.services.plex.loadBalancer.servers]]
+      url = "http://10.0.1.13:32400"
