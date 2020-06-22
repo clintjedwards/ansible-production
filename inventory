@@ -9,7 +9,7 @@ rpitemp.clintjedwards.home
 rpi02.clintjedwards.home
 
 [dns]
-rpi01.clintjedwards.home
+dns.clintjedwards.home
 
 [nas]
 nas.clintjedwards.home
@@ -30,3 +30,6 @@ redis.clintjedwards.home
 
 [traefik]
 traefik.clintjedwards.home
+
+[unifi]
+unifi.clintjedwards.home

@@ -1,5 +1,5 @@
 $TTL    604800
-@    IN    SOA    ns1.clintjedwards.home. admin.clintjedwards.home. (
+@    IN    SOA    dns.clintjedwards.home. admin.clintjedwards.home. (
                   1        ; Serial
              604800        ; Refresh
               86400        ; Retry
@@ -8,13 +8,17 @@ $TTL    604800
 ;
 
 ; name servers - NS records
-@    IN    NS    ns1
+@    IN    NS    dns
 
 ; nas
 nas.clintjedwards.home.            IN    A    10.0.1.13
 
 ; name
-ns1.clintjedwards.home.            IN    A    10.0.1.104
+dns.clintjedwards.home.            IN    A    10.0.1.120
+
+; unifi controller
+unifi.clintjedwards.home.          IN    A    10.0.1.126
+unms.clintjedwards.home.           IN    A    10.0.1.126
 
 ; prometheus
 prometheus.clintjedwards.home.     IN    A    10.0.1.13
@@ -43,9 +47,5 @@ deluge.clintjedwards.home.         IN    A    10.0.1.13
 ; plex
 plex.clintjedwards.home.           IN    A    10.0.1.13
 
-; rpi-cluster
-rpi01.clintjedwards.home.        IN    A    10.0.1.104
-rpi02.clintjedwards.home.        IN    A    10.0.1.105
-rpi03.clintjedwards.home.        IN    A    10.0.1.106
-rpi04.clintjedwards.home.        IN    A    10.0.1.107
+; temperature monitor
 rpitemp.clintjedwards.home.      IN    A    10.0.1.78

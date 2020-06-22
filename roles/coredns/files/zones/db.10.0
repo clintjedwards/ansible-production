@@ -1,5 +1,5 @@
 $TTL    604800
-@    IN    SOA    ns1.clintjedwards.home. admin.clintjedwards.home. (
+@    IN    SOA    dns.clintjedwards.home. admin.clintjedwards.home. (
                   3        ; Serial
              604800        ; Refresh
               86400        ; Retry
@@ -8,13 +8,15 @@ $TTL    604800
 ;
 
 ; name servers - NS records
-
-@   IN    NS    ns1.clintjedwards.home.
+@   IN    NS    dns.clintjedwards.home.
 
 ; PTR records
 
 ; nameserver
-104.1      IN  PTR ns1.clintjedwards.home.
+120.1      IN  PTR dns.clintjedwards.home.
+
+126.1      IN  PTR unifi.clintjedwards.home.
+126.1      IN  PTR unms.clintjedwards.home.
 
 ; nas
 13.1       IN  PTR nas.clintjedwards.home.
