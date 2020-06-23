@@ -1,0 +1,7 @@
+---
+- name: LVM | Extend the logical volume to consume all remaining space in the volume group
+  lvol:
+    vg: ubuntu-vg
+    lv: ubuntu-lv
+    size: +100%FREE
+    resizefs: true

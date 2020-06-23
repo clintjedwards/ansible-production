@@ -5,7 +5,6 @@
     remote_src: yes
     validate_certs: yes
     creates: /usr/bin/prometheus-node-exporter
-    mode: 0755
     extra_opts: [--strip-components=1]
 
 - name: Prometheus Node Exporter | Copy binary to correct place

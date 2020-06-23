@@ -16,30 +16,23 @@ nas.clintjedwards.home.            IN    A    10.0.1.13
 ; name
 dns.clintjedwards.home.            IN    A    10.0.1.120
 
-; unifi controller
-unifi.clintjedwards.home.          IN    A    10.0.1.126
-unms.clintjedwards.home.           IN    A    10.0.1.126
+; unms/unifi controller
+unifi.clintjedwards.home.           IN    A    10.0.1.126
+
+idrac.clintjedwards.home.          IN    A    10.0.1.115
+esxi.clintjedwards.home.           IN    A    10.0.1.117
 
 ; prometheus
-prometheus.clintjedwards.home.     IN    A    10.0.1.13
-
-; grafana
-grafana.clintjedwards.home.        IN    A    10.0.1.13
+prometheus.clintjedwards.home.     IN    A    10.0.1.127
 
 ; kubernetes
 kubernetes.clintjedwards.home.     IN    A    10.0.1.107
-
-; experimental app
-experimental.clintjedwards.home.   IN    A    10.0.1.105
 
 ; goto app
 go.clintjedwards.home.             IN    A    10.0.1.105
 
 ; redis
 redis.clintjedwards.home.          IN    A    10.0.1.105
-
-; traefik
-traefik.clintjedwards.home.        IN    A    10.0.1.13
 
 ; deluge
 deluge.clintjedwards.home.         IN    A    10.0.1.13

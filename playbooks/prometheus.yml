@@ -1,7 +1,5 @@
 - hosts: prometheus
-  vars:
-    prometheus_version: 2.16.0
   roles:
-    - roles/prometheus/master
-    - roles/prometheus/blackbox-exporter
-    - roles/prometheus/grafana
+    - roles/prometheus/prometheus-master
+    - roles/prometheus/prometheus-blackbox-exporter
+    - roles/prometheus/prometheus-grafana

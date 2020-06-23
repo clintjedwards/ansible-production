@@ -16,22 +16,15 @@ $TTL    604800
 120.1      IN  PTR dns.clintjedwards.home.
 
 126.1      IN  PTR unifi.clintjedwards.home.
-126.1      IN  PTR unms.clintjedwards.home.
+
+115.1      IN  PTR idrac.clintjedwards.home.
+117.1      IN  PTR esxi.clintjedwards.home.
 
 ; nas
 13.1       IN  PTR nas.clintjedwards.home.
 
 ; prometheus
-13.1       IN PTR prometheus.clintjedwards.home.
-
-; grafana
-13.1       IN  PTR grafana.clintjedwards.home.
-
-; kubernetes-master
-107.1      IN  PTR kubernetes-master.clintjedwards.home.
-
-; experimental app
-105.1      IN  PTR experimental.clintjedwards.home.
+127.1       IN PTR prometheus.clintjedwards.home.
 
 ; goto app
 105.1      IN  PTR go.clintjedwards.home.
@@ -39,18 +32,10 @@ $TTL    604800
 ; redis
 105.1      IN  PTR redis.clintjedwards.home.
 
-; traefik
-13.1       IN  PTR traefik.clintjedwards.home.
-
 ; deluge
 13.1       IN  PTR deluge.clintjedwards.home.
 
 ; plex
 13.1       IN  PTR plex.clintjedwards.home.
 
-; rpi
-104.1      IN  PTR rpi01.clintjedwards.home.
-105.1      IN  PTR rpi02.clintjedwards.home.
-106.1      IN  PTR rpi03.clintjedwards.home.
-107.1      IN  PTR rpi04.clintjedwards.home.
 78.1       IN  PTR rpitemp.clintjedwards.home.

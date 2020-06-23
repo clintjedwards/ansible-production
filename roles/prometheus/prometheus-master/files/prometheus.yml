@@ -3,20 +3,18 @@ scrape_configs:
     static_configs:
       - targets: [
             # node exporter
-            "rpi01.clintjedwards.home:9100",
-            "rpi02.clintjedwards.home:9100",
-            "rpi03.clintjedwards.home:9100",
-            "rpi04.clintjedwards.home:9100",
             "rpitemp.clintjedwards.home:9100",
             "nas.clintjedwards.home:9100",
-            # prom metrics
-            "rpi01.clintjedwards.home:9090",
+            "traefik.clintjedwards.home:9100",
+            "prometheus.clintjedwards.home:9100",
+            "dns.clintjedwards.home:9100",
+            "unifi.clintjedwards.home:9100",
             # apartment temp metrics
             "rpitemp.clintjedwards.home:8001",
             # basecoat service metrics
             "basecoat.clintjedwards.com:4444",
             # coredns metrics
-            ns1.clintjedwards.home:8001,
+            dns.clintjedwards.home:8001,
           ]
   - job_name: "blackbox"
     metrics_path: "/probe"
