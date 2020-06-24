@@ -27,7 +27,7 @@ $TTL    604800
 127.1       IN PTR prometheus.clintjedwards.home.
 
 ; goto app
-105.1      IN  PTR go.clintjedwards.home.
+129.1      IN  PTR go.clintjedwards.home.
 
 ; redis
 105.1      IN  PTR redis.clintjedwards.home.

@@ -1,8 +1,4 @@
 [rpi-cluster]
-rpi01.clintjedwards.home
-rpi02.clintjedwards.home
-rpi03.clintjedwards.home
-rpi04.clintjedwards.home
 rpitemp.clintjedwards.home
 
 [blackbox]
@@ -17,14 +13,6 @@ nas.clintjedwards.home
 [prometheus]
 prometheus.clintjedwards.home
 
-[kubernetes-master]
-rpi04.clintjedwards.home
-
-[kubernetes-minion]
-rpi01.clintjedwards.home
-rpi02.clintjedwards.home
-rpi03.clintjedwards.home
-
 [redis]
 redis.clintjedwards.home
 
@@ -33,3 +21,6 @@ traefik.clintjedwards.home
 
 [unifi]
 unifi.clintjedwards.home
+
+[go]
+go.clintjedwards.home
