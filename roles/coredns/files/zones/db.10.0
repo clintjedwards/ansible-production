@@ -13,12 +13,12 @@ $TTL    604800
 ; PTR records
 
 ; nameserver
-120.1      IN  PTR dns.clintjedwards.home.
+120.1       IN  PTR dns.clintjedwards.home.
 
-126.1      IN  PTR unifi.clintjedwards.home.
+126.1       IN  PTR unifi.clintjedwards.home.
 
-115.1      IN  PTR idrac.clintjedwards.home.
-117.1      IN  PTR esxi.clintjedwards.home.
+115.1       IN  PTR idrac.clintjedwards.home.
+117.1       IN  PTR esxi.clintjedwards.home.
 
 ; nas
 131.1       IN  PTR nas.clintjedwards.home.
@@ -27,15 +27,8 @@ $TTL    604800
 127.1       IN PTR prometheus.clintjedwards.home.
 
 ; goto app
-129.1      IN  PTR go.clintjedwards.home.
+129.1       IN  PTR go.clintjedwards.home.
 
-; redis
-105.1      IN  PTR redis.clintjedwards.home.
+78.1        IN  PTR rpitemp.clintjedwards.home.
 
-; deluge
-13.1       IN  PTR deluge.clintjedwards.home.
-
-; plex
-13.1       IN  PTR plex.clintjedwards.home.
-
-78.1       IN  PTR rpitemp.clintjedwards.home.
+132.1       IN  PTR vault.clintjedwards.home.

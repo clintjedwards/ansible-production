@@ -17,7 +17,7 @@ nas.clintjedwards.home.            IN    A    10.0.1.131
 dns.clintjedwards.home.            IN    A    10.0.1.120
 
 ; unms/unifi controller
-unifi.clintjedwards.home.           IN    A    10.0.1.126
+unifi.clintjedwards.home.          IN    A    10.0.1.126
 
 idrac.clintjedwards.home.          IN    A    10.0.1.115
 esxi.clintjedwards.home.           IN    A    10.0.1.117
@@ -25,20 +25,10 @@ esxi.clintjedwards.home.           IN    A    10.0.1.117
 ; prometheus
 prometheus.clintjedwards.home.     IN    A    10.0.1.127
 
-; kubernetes
-kubernetes.clintjedwards.home.     IN    A    10.0.1.107
-
 ; goto app
 go.clintjedwards.home.             IN    A    10.0.1.129
 
-; redis
-redis.clintjedwards.home.          IN    A    10.0.1.105
-
-; deluge
-deluge.clintjedwards.home.         IN    A    10.0.1.13
-
-; plex
-plex.clintjedwards.home.           IN    A    10.0.1.13
-
 ; temperature monitor
-rpitemp.clintjedwards.home.      IN    A    10.0.1.78
+rpitemp.clintjedwards.home.        IN    A    10.0.1.78
+
+vault.clintjedwards.home.          IN    A    10.0.1.132
