@@ -21,7 +21,7 @@ $TTL    604800
 117.1      IN  PTR esxi.clintjedwards.home.
 
 ; nas
-13.1       IN  PTR nas.clintjedwards.home.
+131.1       IN  PTR nas.clintjedwards.home.
 
 ; prometheus
 127.1       IN PTR prometheus.clintjedwards.home.
