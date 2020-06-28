@@ -1,0 +1,22 @@
+- name: Vault | Create user
+  user:
+    name: "vault"
+    createhome: no
+    append: yes
+
+- name: Vault | Create /etc/vault.d folder
+  file:
+    path: /etc/vault.d
+    state: directory
+
+- name: Vault | Create /etc/vault.d/policies folder
+  file:
+    path: /etc/vault.d/policies
+    state: directory
+
+- name: Vault | Copy config file
+  copy:
+    src: vault.hcl
+    dest: /etc/vault.d/vault.hcl
+    owner: vault
+    group: vault
