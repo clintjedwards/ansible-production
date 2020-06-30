@@ -6,6 +6,7 @@
         "apt-transport-https",
         "ca-certificates",
         "curl",
+        "net-tools",
         "software-properties-common",
         "unzip",
         "vim",

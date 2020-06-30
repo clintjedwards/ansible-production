@@ -1,0 +1,10 @@
+# https://caddyserver.com/docs/caddyfile
+{
+    admin off
+    auto_https off
+}
+
+go.clintjedwards.home go {
+    reverse_proxy * localhost:8080
+    tls "/etc/caddy/certs/go.crt" "/etc/caddy/certs/go.key"
+}
