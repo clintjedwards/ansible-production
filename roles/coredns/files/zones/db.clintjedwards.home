@@ -32,3 +32,5 @@ go.clintjedwards.home.             IN    A    10.0.1.129
 rpitemp.clintjedwards.home.        IN    A    10.0.1.78
 
 vault.clintjedwards.home.          IN    A    10.0.1.132
+
+vpn.clintjedwards.home.            IN    A    10.0.1.135

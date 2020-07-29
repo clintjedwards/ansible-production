@@ -1,11 +1,14 @@
-#Regular users
-- name: Users | Create user
+- name: Users | Create admin user
   user:
-    name: "{{ item }}"
+    name: "clintjedwards"
     shell: /bin/bash
     createhome: yes
     groups: ["sudo"]
-    home: "/home/{{ item }}"
+    home: "/home/clintjedwards"
     append: yes
-  with_items: "{{ user_list }}"
-  when: user_list is defined
+
+- name: Set authorized keys as github keys
+  authorized_key:
+    user: "clintjedwards"
+    state: present
+    key: "https://github.com/clintjedwards.keys"

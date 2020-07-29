@@ -1,9 +1,6 @@
 [rpi-cluster]
 rpitemp.clintjedwards.home
 
-[blackbox]
-rpi02.clintjedwards.home
-
 [dns]
 dns.clintjedwards.home
 
@@ -13,17 +10,14 @@ nas.clintjedwards.home
 [prometheus]
 prometheus.clintjedwards.home
 
-[redis]
-redis.clintjedwards.home
-
-[traefik]
-traefik.clintjedwards.home
-
 [unifi]
 unifi.clintjedwards.home
 
 [go]
 go.clintjedwards.home
 
-[vault]
-vault.clintjedwards.home
+#[vault]
+#vault.clintjedwards.home
+
+[vpn]
+vpn.clintjedwards.home

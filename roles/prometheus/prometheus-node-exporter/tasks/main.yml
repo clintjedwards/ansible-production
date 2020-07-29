@@ -30,3 +30,8 @@
   systemd:
     name: prometheus-node-exporter
     enabled: yes
+
+- name: Prometheus Node Exporter | Make sure a service is running
+  systemd:
+    state: started
+    name: prometheus-node-exporter

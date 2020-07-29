@@ -1,7 +1,4 @@
 - hosts: all
-  vars:
-    user_list:
-      - clintjedwards
   roles:
     - roles/lvm
     - roles/hostname

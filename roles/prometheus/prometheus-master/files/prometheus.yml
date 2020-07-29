@@ -10,6 +10,7 @@ scrape_configs:
             "unifi.clintjedwards.home:9100",
             "go.clintjedwards.home:9100",
             "vault.clintjedwards.home:9100",
+            "vpn.clintjedwards.home:9100",
             # apartment temp metrics
             "rpitemp.clintjedwards.home:8001",
             # basecoat service metrics

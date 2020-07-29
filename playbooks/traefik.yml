@@ -1,5 +1,0 @@
-- hosts: traefik
-  vars:
-    traefik_version: 2.2.0
-  roles:
-    - roles/traefik

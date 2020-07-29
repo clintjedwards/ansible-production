@@ -32,3 +32,5 @@ $TTL    604800
 78.1        IN  PTR rpitemp.clintjedwards.home.
 
 132.1       IN  PTR vault.clintjedwards.home.
+
+135.1       IN  PTR vpn.clintjedwards.home.
