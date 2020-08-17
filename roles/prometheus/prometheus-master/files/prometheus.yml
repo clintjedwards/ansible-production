@@ -11,6 +11,7 @@ scrape_configs:
             "go.clintjedwards.home:9100",
             "vault.clintjedwards.home:9100",
             "vpn.clintjedwards.home:9100",
+            "pirate.clintjedwards.home:9100",
             # apartment temp metrics
             "rpitemp.clintjedwards.home:8001",
             # basecoat service metrics
