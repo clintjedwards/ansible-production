@@ -36,3 +36,5 @@ $TTL    604800
 5.1       IN  PTR vpn.clintjedwards.home.
 
 12.1      IN  PTR pirate.clintjedwards.home.
+
+13.1      IN  PTR music.clintjedwards.home.

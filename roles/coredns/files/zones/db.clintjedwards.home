@@ -36,3 +36,5 @@ vault.clintjedwards.home.          IN    A    10.0.1.11
 vpn.clintjedwards.home.            IN    A    10.0.1.5
 
 pirate.clintjedwards.home.         IN    A    10.0.1.12
+
+music.clintjedwards.home.          IN    A    10.0.1.13
