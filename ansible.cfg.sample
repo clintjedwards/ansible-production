@@ -1,4 +1,4 @@
 [defaults]
 retry_files_enabled = False
 host_key_checking = True
-stdout_callback = actionable
+stdout_callback = debug
