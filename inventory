@@ -16,11 +16,11 @@ unifi.clintjedwards.home
 [go]
 go.clintjedwards.home
 
-#[vault]
-#vault.clintjedwards.home
-
 [vpn]
 vpn.clintjedwards.home
 
 [pirate]
 pirate.clintjedwards.home
+
+[macropad]
+macropad.clintjedwards.home

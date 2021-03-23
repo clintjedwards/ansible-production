@@ -22,7 +22,7 @@
 
 - name: Prometheus | Download, unzip, and install binary
   unarchive:
-    src: https://github.com/prometheus/prometheus/releases/download/v2.19.1/prometheus-2.19.1.linux-amd64.tar.gz
+    src: https://github.com/prometheus/prometheus/releases/download/v2.25.2/prometheus-2.25.2.linux-amd64.tar.gz
     dest: /tmp
     remote_src: yes
     validate_certs: yes

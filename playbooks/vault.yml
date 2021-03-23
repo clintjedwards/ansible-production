@@ -1,3 +1,0 @@
-- hosts: vault
-  roles:
-    - roles/vault

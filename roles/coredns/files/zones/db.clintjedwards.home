@@ -22,6 +22,8 @@ unifi.clintjedwards.home.          IN    A    10.0.1.6
 idrac.clintjedwards.home.          IN    A    10.0.1.115
 esxi.clintjedwards.home.           IN    A    10.0.1.4
 
+proxmox.clintjedwards.home.        IN    A    10.0.1.14
+
 ; prometheus
 prometheus.clintjedwards.home.     IN    A    10.0.1.7
 
@@ -31,10 +33,9 @@ go.clintjedwards.home.             IN    A    10.0.1.8
 ; temperature monitor
 rpitemp.clintjedwards.home.        IN    A    10.0.1.78
 
-vault.clintjedwards.home.          IN    A    10.0.1.11
-
 vpn.clintjedwards.home.            IN    A    10.0.1.5
 
 pirate.clintjedwards.home.         IN    A    10.0.1.12
 
-music.clintjedwards.home.          IN    A    10.0.1.13
+macropad.clintjedwards.home.        IN    A    10.0.1.154
+

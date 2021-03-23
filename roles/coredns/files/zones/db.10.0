@@ -29,12 +29,13 @@ $TTL    604800
 ; goto app
 8.1       IN  PTR go.clintjedwards.home.
 
-78.1      IN  PTR rpitemp.clintjedwards.home.
+; proxmox
+14.1      IN  PTR proxmox.clintjedwards.home.
 
-11.1      IN  PTR vault.clintjedwards.home.
+78.1      IN  PTR rpitemp.clintjedwards.home.
 
 5.1       IN  PTR vpn.clintjedwards.home.
 
 12.1      IN  PTR pirate.clintjedwards.home.
 
-13.1      IN  PTR music.clintjedwards.home.
+154.1     IN  PTR macropad.clintjedwards.home.
